@@ -4,7 +4,7 @@
 
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4) ![NuGet](https://img.shields.io/badge/ek%20NuGet-gerekmez-brightgreen)
 
-`DSO.Core.Evoker.Json`, [DSO.Core.Evoker](../DSO.Core.Evoker/README.md) ile üretilen tipleri `System.Text.Json` ile
+`DSO.Core.Evoker.Json`, [DSO.Core.Evoker](https://github.com/DSOpenServer/DSO.Core.Evoker/blob/main/README.md) ile üretilen tipleri `System.Text.Json` ile
 serialize ve deserialize eden ince bir köprüdür. Tek bir `JsonConverterFactory` ve üç kolaylık metodundan oluşur.
 Ek bağımlılığı yoktur, çünkü `System.Text.Json` zaten .NET'in içindedir.
 
@@ -143,7 +143,7 @@ dc.SetMethod<Func<bool>>("Validate", () => true);
 string json = dc.ToJson();   // {"Id":1,"Name":null}  - davranış (metot/event) JSON'a yansımaz
 ```
 
-Ayrıntılar için [DSO.Core.Evoker.Extend](../DSO.Core.Evoker.Extend/README.md).
+Ayrıntılar için [DSO.Core.Evoker.Extend](https://github.com/DSOpenServer/DSO.Core.Evoker.Extend/blob/main/README.md).
 
 ### Kendi seçeneklerinizle doğrudan System.Text.Json
 
@@ -192,7 +192,7 @@ object? nesne = JsonSerializer.Deserialize(json, dc.Type, opt);
 
 ## İlgili paketler
 
-- [DSO.Core.Evoker](../DSO.Core.Evoker/README.md): `DynamicClass`, `DynamicTypeFactory.GetSchema` / `IsDynamicType`.
-- [DSO.Core.Evoker.Extend](../DSO.Core.Evoker.Extend/README.md): interface ve taban sınıf implementasyonu.
-- Not: [DSO.Core.Evoker.Api](../DSO.Core.Evoker.Api/README.md) ve [Plugins](../DSO.Core.Evoker.Plugins/README.md) kendi
+- [DSO.Core.Evoker](https://github.com/DSOpenServer/DSO.Core.Evoker/blob/main/README.md): `DynamicClass`, `DynamicTypeFactory.GetSchema` / `IsDynamicType`.
+- [DSO.Core.Evoker.Extend](https://github.com/DSOpenServer/DSO.Core.Evoker.Extend/blob/main/README.md): interface ve taban sınıf implementasyonu.
+- Not: [DSO.Core.Evoker.Api](https://github.com/DSOpenServer/DSO.Core.Evoker.Api/blob/main/README.md) ve [Plugins](https://github.com/DSOpenServer/DSO.Core.Evoker.Plugins/blob/main/README.md) kendi
   JSON ihtiyaçları için çekirdeğin `EvokerJson` ayarlarını kullanır; bu paket onlar için gerekli değildir.
